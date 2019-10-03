@@ -198,7 +198,7 @@ const data = [
 
 const articles = document.querySelector('.articles')
 
-data.forEach(info => {
+data.map(info => {
   // console.log(info, info.title)
   articles.appendChild(createArticle(info.title, info.date, info.firstParagraph, info.secondParagraph, info.thirdParagraph))
 })
